@@ -1,215 +1,1064 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audio Theraphy</title>
-    <link rel="shortcut icon" href="assets/web-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <img src="assets/nav logo.jpeg" alt="Audio Theraphy logo" />
-        <span>audio.theraphy._</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmployeeHub — One workspace. Every employee. Everything connected.</title>
+  <meta name="description" content="EmployeeHub is a modern SaaS employee management platform bringing employee profiles, attendance, performance insights, and team productivity into one workspace.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- NAVIGATION BAR                             -->
+  <!-- ========================================== -->
+  <header class="navbar-header">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="EmployeeHub Home">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="8" height="8" rx="2.5" fill="currentColor"/>
+            <rect x="13" y="3" width="8" height="8" rx="2.5" fill="currentColor" fill-opacity="0.6"/>
+            <rect x="3" y="13" width="8" height="8" rx="2.5" fill="currentColor" fill-opacity="0.6"/>
+            <rect x="13" y="13" width="8" height="8" rx="2.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo-text">Employee<span class="accent-text">Hub</span></span>
+      </a>
+
+      <!-- CSS-Only Hamburger Menu Toggle -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#pricing" class="btn btn-secondary btn-sm">Log In</a>
+          <a href="#pricing" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">SMART EMPLOYEE MANAGEMENT</span>
+          </div>
+          <h1 class="hero-title">
+            Manage your workforce.<br>
+            <span class="gradient-text">Without the complexity.</span>
+          </h1>
+          <p class="hero-description">
+            EmployeeHub brings employee information, attendance, performance and team productivity into one beautifully organized workspace.
+          </p>
+          <div class="hero-actions">
+            <a href="#dashboard" class="btn btn-primary btn-lg shadow-glow">
+              Explore Dashboard
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#pricing" class="btn btn-outline btn-lg">
+              Get Started
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatar-stack">
+              <span class="avatar-mini av-1">OM</span>
+              <span class="avatar-mini av-2">NW</span>
+              <span class="avatar-mini av-3">EJ</span>
+              <span class="avatar-mini av-4">LA</span>
+            </div>
+            <div class="trust-text">
+              <div class="stars">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p>Trusted by <strong>10,000+</strong> HR teams & managers worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Dashboard Showcase -->
+        <div class="hero-visual" id="dashboard">
+          <div class="dashboard-window shadow-xl">
+            <!-- Window Bar -->
+            <div class="dash-window-bar">
+              <div class="dash-dots">
+                <span class="dash-dot red"></span>
+                <span class="dash-dot yellow"></span>
+                <span class="dash-dot green"></span>
+              </div>
+              <div class="dash-window-title">app.employeehub.com/dashboard</div>
+              <div class="dash-window-status">
+                <span class="status-indicator"></span> Live Preview
+              </div>
+            </div>
+
+            <!-- Static SaaS App Shell -->
+            <div class="dash-app-shell">
+              <!-- TOP BAR -->
+              <header class="dash-topbar">
+                <div class="dash-brand">
+                  <span class="mini-logo">EH</span>
+                  <span class="dash-title">EmployeeHub</span>
+                </div>
+                <div class="dash-search">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <input type="text" placeholder="Search employees, departments, tasks..." readonly>
+                  <span class="kbd-badge">⌘K</span>
+                </div>
+                <div class="dash-user-nav">
+                  <div class="dash-icon-btn" title="Notifications">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="notif-badge"></span>
+                  </div>
+                  <div class="dash-profile">
+                    <div class="user-avatar-circle">AM</div>
+                    <div class="user-meta">
+                      <span class="user-name">Alex Morgan</span>
+                      <span class="user-role">HR Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+              <!-- BODY LAYOUT: SIDEBAR + MAIN -->
+              <div class="dash-body">
+                <!-- SIDEBAR -->
+                <aside class="dash-sidebar">
+                  <nav class="sidebar-nav">
+                    <a href="#dashboard" class="sidebar-item active">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                      </svg>
+                      <span>Dashboard</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                      </svg>
+                      <span>Employees</span>
+                      <span class="side-count">248</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      <span>Attendance</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                      </svg>
+                      <span>Performance</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 11l3 3L22 4"></path>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                      </svg>
+                      <span>Tasks</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                      </svg>
+                      <span>Leave</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                      </svg>
+                      <span>Reports</span>
+                    </a>
+                    <a href="#dashboard" class="sidebar-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                      </svg>
+                      <span>Settings</span>
+                    </a>
+                  </nav>
+                </aside>
+
+                <!-- MAIN DASHBOARD CONTENT -->
+                <main class="dash-main">
+                  <!-- MAIN GREETING HEADER -->
+                  <div class="dash-header-bar">
+                    <div>
+                      <h2 class="dash-greeting">Good morning, Alex 👋</h2>
+                      <p class="dash-subtext">Here's what's happening with your team today.</p>
+                    </div>
+                    <div class="dash-actions">
+                      <button class="dash-btn dash-btn-outline" type="button">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                        </svg>
+                        Filter
+                      </button>
+                      <button class="dash-btn dash-btn-primary" type="button">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Add Employee
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- 4 STATISTIC CARDS GRID -->
+                  <div class="dash-stats-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card">
+                      <div class="stat-header">
+                        <span class="stat-label">TOTAL EMPLOYEES</span>
+                        <div class="stat-icon-wrapper blue">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="stat-value">248</div>
+                      <div class="stat-footer">
+                        <span class="trend-badge positive">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                          </svg>
+                          +12.4%
+                        </span>
+                        <span class="trend-subtext">from last month</span>
+                      </div>
+                    </div>
+
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card">
+                      <div class="stat-header">
+                        <span class="stat-label">PRESENT TODAY</span>
+                        <div class="stat-icon-wrapper green">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="stat-value">221</div>
+                      <div class="stat-footer">
+                        <span class="trend-badge positive">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                          </svg>
+                          98.2%
+                        </span>
+                        <span class="trend-subtext">attendance rate</span>
+                      </div>
+                    </div>
+
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card">
+                      <div class="stat-header">
+                        <span class="stat-label">ON LEAVE</span>
+                        <div class="stat-icon-wrapper amber">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="stat-value">12</div>
+                      <div class="stat-footer">
+                        <span class="trend-badge neutral">
+                          4 pending
+                        </span>
+                        <span class="trend-subtext">approval needed</span>
+                      </div>
+                    </div>
+
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card">
+                      <div class="stat-header">
+                        <span class="stat-label">OPEN TASKS</span>
+                        <div class="stat-icon-wrapper purple">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"></path>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="stat-value">37</div>
+                      <div class="stat-footer">
+                        <span class="trend-badge danger">
+                          14 high
+                        </span>
+                        <span class="trend-subtext">priority items</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- DASHBOARD GRID: MAIN CONTENT AREA -->
+                  <div class="dash-grid-layout">
+                    <!-- LEFT COLUMN: EMPLOYEE OVERVIEW TABLE -->
+                    <div class="dash-card dash-table-card">
+                      <div class="card-header-flex">
+                        <div>
+                          <h3 class="card-title">Employee Overview</h3>
+                          <p class="card-subtitle">Current status and performance score across departments</p>
+                        </div>
+                        <a href="#dashboard" class="link-sm">View All (248) →</a>
+                      </div>
+
+                      <!-- Table Wrapper for Desktop & Flex/Grid Card layout for Mobile -->
+                      <div class="table-responsive">
+                        <table class="emp-table">
+                          <thead>
+                            <tr>
+                              <th>Employee</th>
+                              <th>Department</th>
+                              <th>Status</th>
+                              <th>Performance</th>
+                              <th class="text-right">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="emp-profile-cell">
+                                  <span class="avatar-sm bg-indigo">OC</span>
+                                  <div>
+                                    <span class="emp-name">Olivia Carter</span>
+                                    <span class="emp-email">olivia.c@company.com</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td><span class="dept-tag">Engineering</span></td>
+                              <td><span class="status-pill active"><span class="pill-dot"></span> Active</span></td>
+                              <td>
+                                <div class="perf-bar-cell">
+                                  <span class="perf-val">94%</span>
+                                  <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+                                </div>
+                              </td>
+                              <td class="text-right">
+                                <button class="btn-icon" title="View Profile">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="emp-profile-cell">
+                                  <span class="avatar-sm bg-blue">NW</span>
+                                  <div>
+                                    <span class="emp-name">Noah Williams</span>
+                                    <span class="emp-email">noah.w@company.com</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td><span class="dept-tag">Design</span></td>
+                              <td><span class="status-pill active"><span class="pill-dot"></span> Active</span></td>
+                              <td>
+                                <div class="perf-bar-cell">
+                                  <span class="perf-val">89%</span>
+                                  <div class="progress-track"><div class="progress-fill" style="width: 89%;"></div></div>
+                                </div>
+                              </td>
+                              <td class="text-right">
+                                <button class="btn-icon" title="View Profile">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="emp-profile-cell">
+                                  <span class="avatar-sm bg-amber">EJ</span>
+                                  <div>
+                                    <span class="emp-name">Emma Johnson</span>
+                                    <span class="emp-email">emma.j@company.com</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td><span class="dept-tag">Marketing</span></td>
+                              <td><span class="status-pill on-leave"><span class="pill-dot"></span> On Leave</span></td>
+                              <td>
+                                <div class="perf-bar-cell">
+                                  <span class="perf-val">92%</span>
+                                  <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                                </div>
+                              </td>
+                              <td class="text-right">
+                                <button class="btn-icon" title="View Profile">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="emp-profile-cell">
+                                  <span class="avatar-sm bg-emerald">LA</span>
+                                  <div>
+                                    <span class="emp-name">Liam Anderson</span>
+                                    <span class="emp-email">liam.a@company.com</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td><span class="dept-tag">Engineering</span></td>
+                              <td><span class="status-pill active"><span class="pill-dot"></span> Active</span></td>
+                              <td>
+                                <div class="perf-bar-cell">
+                                  <span class="perf-val">96%</span>
+                                  <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+                                </div>
+                              </td>
+                              <td class="text-right">
+                                <button class="btn-icon" title="View Profile">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="emp-profile-cell">
+                                  <span class="avatar-sm bg-purple">SB</span>
+                                  <div>
+                                    <span class="emp-name">Sophia Brown</span>
+                                    <span class="emp-email">sophia.b@company.com</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td><span class="dept-tag">HR</span></td>
+                              <td><span class="status-pill active"><span class="pill-dot"></span> Active</span></td>
+                              <td>
+                                <div class="perf-bar-cell">
+                                  <span class="perf-val">87%</span>
+                                  <div class="progress-track"><div class="progress-fill" style="width: 87%;"></div></div>
+                                </div>
+                              </td>
+                              <td class="text-right">
+                                <button class="btn-icon" title="View Profile">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: SIDE PANELS (PERFORMANCE, ACTIVITY, EVENTS) -->
+                    <div class="dash-side-panels">
+                      <!-- Team Performance Card -->
+                      <div class="dash-card">
+                        <div class="card-header-flex">
+                          <h3 class="card-title">Team Performance</h3>
+                          <span class="badge-sm">This Quarter</span>
+                        </div>
+                        <div class="team-perf-list">
+                          <div class="perf-item">
+                            <div class="perf-info">
+                              <span class="perf-name">Engineering</span>
+                              <span class="perf-percentage">92%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill bg-indigo" style="width: 92%;"></div></div>
+                          </div>
+
+                          <div class="perf-item">
+                            <div class="perf-info">
+                              <span class="perf-name">Design</span>
+                              <span class="perf-percentage">86%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill bg-blue" style="width: 86%;"></div></div>
+                          </div>
+
+                          <div class="perf-item">
+                            <div class="perf-info">
+                              <span class="perf-name">Marketing</span>
+                              <span class="perf-percentage">79%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill bg-amber" style="width: 79%;"></div></div>
+                          </div>
+
+                          <div class="perf-item">
+                            <div class="perf-info">
+                              <span class="perf-name">HR</span>
+                              <span class="perf-percentage">88%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill bg-emerald" style="width: 88%;"></div></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Recent Activity Timeline Panel -->
+                      <div class="dash-card">
+                        <div class="card-header-flex">
+                          <h3 class="card-title">Recent Activity</h3>
+                          <span class="live-dot" title="Live updates"></span>
+                        </div>
+                        <ul class="activity-timeline">
+                          <li class="activity-item">
+                            <span class="activity-bullet blue"></span>
+                            <div class="activity-body">
+                              <p class="activity-text"><strong>Olivia</strong> completed "Website Redesign"</p>
+                              <span class="activity-time">5 min ago</span>
+                            </div>
+                          </li>
+
+                          <li class="activity-item">
+                            <span class="activity-bullet green"></span>
+                            <div class="activity-body">
+                              <p class="activity-text"><strong>Noah</strong> submitted a performance review</p>
+                              <span class="activity-time">18 min ago</span>
+                            </div>
+                          </li>
+
+                          <li class="activity-item">
+                            <span class="activity-bullet amber"></span>
+                            <div class="activity-body">
+                              <p class="activity-text"><strong>Emma</strong> requested leave</p>
+                              <span class="activity-time">42 min ago</span>
+                            </div>
+                          </li>
+
+                          <li class="activity-item">
+                            <span class="activity-bullet purple"></span>
+                            <div class="activity-body">
+                              <p class="activity-text"><strong>Liam</strong> joined the Engineering team</p>
+                              <span class="activity-time">1 hr ago</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Upcoming Events Panel -->
+                      <div class="dash-card">
+                        <div class="card-header-flex">
+                          <h3 class="card-title">Upcoming</h3>
+                          <span class="date-chip">Today</span>
+                        </div>
+                        <ul class="events-list">
+                          <li class="event-item">
+                            <div class="event-time">10:30 AM</div>
+                            <div class="event-details">
+                              <span class="event-title">Team Meeting</span>
+                              <span class="event-sub">Sprint Sync & Roadmap</span>
+                            </div>
+                          </li>
+                          <li class="event-item">
+                            <div class="event-time">2:00 PM</div>
+                            <div class="event-details">
+                              <span class="event-title">Performance Review</span>
+                              <span class="event-sub">Q3 Engineering Assessment</span>
+                            </div>
+                          </li>
+                          <li class="event-item">
+                            <div class="event-time">4:30 PM</div>
+                            <div class="event-details">
+                              <span class="event-title">Product Planning</span>
+                              <span class="event-sub">HR Tech Integration</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FEATURES SECTION                           -->
+    <!-- ========================================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">POWERFUL FEATURES</span>
+          <h2 class="section-title">Everything your team needs.</h2>
+          <p class="section-subtitle">One powerful workspace designed to simplify everyday employee management.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Employee Management</h3>
+            <p class="feature-description">
+              Keep employee profiles, departments and roles organized in one place with structured digital records.
+            </p>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Attendance Tracking</h3>
+            <p class="feature-description">
+              Get a clear view of employee attendance, shift schedules, and real-time daily availability.
+            </p>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Performance Insights</h3>
+            <p class="feature-description">
+              Understand team performance through simple visual insights, quarterly metrics, and KPI scores.
+            </p>
+          </div>
+
+          <!-- Feature Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Task Management</h3>
+            <p class="feature-description">
+              Keep assignments organized and make team progress visible with intuitive status tracking.
+            </p>
+          </div>
+
+          <!-- Feature Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Leave Management</h3>
+            <p class="feature-description">
+              Make leave information easier to understand and manage with instant approval workflows.
+            </p>
+          </div>
+
+          <!-- Feature Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Reports</h3>
+            <p class="feature-description">
+              Turn employee information into clear and useful reports to make confident data-driven decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- BENEFITS SECTION                           -->
+    <!-- ========================================== -->
+    <section id="benefits" class="benefits-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">WHY CHOOSE US</span>
+          <h2 class="section-title">Built for better teams.</h2>
+          <p class="section-subtitle">Designed to empower managers and transform workplace efficiency.</p>
+        </div>
+
+        <div class="benefits-split-layout">
+          <!-- LEFT: SECOND DASHBOARD VISUAL -->
+          <div class="benefits-visual">
+            <div class="benefits-card shadow-xl">
+              <div class="benefits-card-header">
+                <div>
+                  <span class="tag-label">ANALYTICS PREVIEW</span>
+                  <h3 class="b-card-title">Employee Performance</h3>
+                </div>
+                <div class="score-pill">Q3 Snapshot</div>
+              </div>
+
+              <!-- Overall Radial Score Box -->
+              <div class="score-overview-box">
+                <div class="radial-chart-container">
+                  <div class="radial-ring">
+                    <div class="radial-inner">
+                      <span class="radial-number">91%</span>
+                      <span class="radial-label">Team Score</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="score-summary-meta">
+                  <h4 class="meta-title">Outstanding Performance</h4>
+                  <p class="meta-desc">+4.2% higher team velocity compared to previous quarter across all 5 departments.</p>
+                  <div class="meta-badge-row">
+                    <span class="meta-chip green">✓ 98% On-time deliverables</span>
+                    <span class="meta-chip blue">⚡ High Engagement</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Performance Breakdown Progress Bars -->
+              <div class="perf-breakdown">
+                <h4 class="breakdown-title">Performance Breakdown</h4>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-label-row">
+                    <span class="b-name">Productivity</span>
+                    <span class="b-val">94%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill bg-indigo" style="width: 94%;"></div></div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-label-row">
+                    <span class="b-name">Attendance</span>
+                    <span class="b-val">89%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill bg-emerald" style="width: 89%;"></div></div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-label-row">
+                    <span class="b-name">Collaboration</span>
+                    <span class="b-val">92%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill bg-blue" style="width: 92%;"></div></div>
+                </div>
+
+                <div class="breakdown-item">
+                  <div class="breakdown-label-row">
+                    <span class="b-name">Goals</span>
+                    <span class="b-val">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill bg-purple" style="width: 90%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: BENEFIT POINTS -->
+          <div class="benefits-content">
+            <ul class="benefit-list">
+              <!-- Benefit Item 1 -->
+              <li class="benefit-item">
+                <div class="benefit-num">01</div>
+                <div class="benefit-details">
+                  <h3 class="benefit-title">Save Time</h3>
+                  <p class="benefit-desc">
+                    Reduce repetitive employee management work and administrative overhead with automated workflows and instant record lookups.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Benefit Item 2 -->
+              <li class="benefit-item">
+                <div class="benefit-num">02</div>
+                <div class="benefit-details">
+                  <h3 class="benefit-title">Stay Organized</h3>
+                  <p class="benefit-desc">
+                    Keep important employee information, contracts, department structures, and roles securely in one central workspace.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Benefit Item 3 -->
+              <li class="benefit-item">
+                <div class="benefit-num">03</div>
+                <div class="benefit-details">
+                  <h3 class="benefit-title">Improve Visibility</h3>
+                  <p class="benefit-desc">
+                    Understand team activity, active tasks, attendance, and overall organizational health at a single glance.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Benefit Item 4 -->
+              <li class="benefit-item">
+                <div class="benefit-num">04</div>
+                <div class="benefit-details">
+                  <h3 class="benefit-title">Work Smarter</h3>
+                  <p class="benefit-desc">
+                    Give managers the clear metrics and actionable insights they need to make better day-to-day operational decisions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TESTIMONIALS SECTION                       -->
+    <!-- ========================================== -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">TESTIMONIALS</span>
+          <h2 class="section-title">Loved by modern teams.</h2>
+          <p class="section-subtitle">Here is what HR leaders and managers say about EmployeeHub.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">
+              "EmployeeHub gives our team a clear picture of what's happening every day. Everything feels much more organized, and our onboarding time dropped by 50%."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-avatar bg-indigo">SM</span>
+              <div>
+                <h4 class="reviewer-name">Sarah Mitchell</h4>
+                <p class="reviewer-role">HR Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">
+              "The dashboard makes employee information incredibly easy to understand. Our managers can find what they need quickly without digging through spreadsheets."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-avatar bg-blue">DC</span>
+              <div>
+                <h4 class="reviewer-name">Daniel Cooper</h4>
+                <p class="reviewer-role">Operations Lead</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="star-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">
+              "We finally have a simple way to keep our employee information and team activity organized. The performance insights are a total game changer."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-avatar bg-emerald">MW</span>
+              <div>
+                <h4 class="reviewer-name">Maya Wilson</h4>
+                <p class="reviewer-role">People Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PRICING & CTA SECTION                      -->
+    <!-- ========================================== -->
+    <section id="pricing" class="cta-section">
+      <div class="container">
+        <div class="cta-box shadow-xl">
+          <div class="cta-content text-center">
+            <span class="cta-badge">GET STARTED TODAY</span>
+            <h2 class="cta-title">Your team's new workspace is ready.</h2>
+            <p class="cta-description">
+              Bring employee management, performance and productivity together with EmployeeHub. Start your 14-day free trial today.
+            </p>
+            <div class="cta-actions">
+              <a href="#hero" class="btn btn-primary btn-lg shadow-glow">
+                Get Started
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#dashboard" class="btn btn-secondary btn-lg">
+                Explore Dashboard
+              </a>
+            </div>
+            <ul class="cta-perks">
+              <li>✓ Instant setup</li>
+              <li>✓ No credit card required</li>
+              <li>✓ 14-day free trial</li>
+              <li>✓ Cancel anytime</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="8" height="8" rx="2.5" fill="currentColor"/>
+                <rect x="13" y="3" width="8" height="8" rx="2.5" fill="currentColor" fill-opacity="0.6"/>
+                <rect x="3" y="13" width="8" height="8" rx="2.5" fill="currentColor" fill-opacity="0.6"/>
+                <rect x="13" y="13" width="8" height="8" rx="2.5" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="logo-text">Employee<span class="accent-text">Hub</span></span>
+          </a>
+          <p class="footer-desc">
+            Simple employee management for modern teams. One workspace. Every employee. Everything connected.
+          </p>
+          <div class="footer-contact-info">
+            <span class="contact-email">✉ hello@employeehub.com</span>
+          </div>
+        </div>
+
+        <!-- Col 1: Product -->
+        <div class="footer-col">
+          <h4 class="footer-heading">PRODUCT</h4>
+          <ul class="footer-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Reports</a></li>
+            <li><a href="#pricing">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Company -->
+        <div class="footer-col">
+          <h4 class="footer-heading">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">About</a></li>
+            <li><a href="#hero">Careers</a></li>
+            <li><a href="#hero">Contact</a></li>
+            <li><a href="#hero">Privacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="footer-col">
+          <h4 class="footer-heading">RESOURCES</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Help Center</a></li>
+            <li><a href="#hero">Documentation</a></li>
+            <li><a href="#hero">Guides</a></li>
+            <li><a href="#hero">Support</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="navlink">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#start" class="nav-cta">Start Listening</a>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="Content">
-        <h1>Quiet Minds.Louder Frequencies...</h1>
-        <h2>Music that understands your mood.</h2>
-        <div class="feature">
-          <div class="feature-item">✓Personalized Music</div>
-          <div class="feature-item">✓Mood Based Listening</div>
-          <div class="feature-item">✓Relaxation/Focus</div>
-          <div class="feature-item">✓Discovering Songs</div>
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 EmployeeHub. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+          <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+          <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
         </div>
-        <button class="b1">Start Listening</button>
-        <button class="b2">Explore Music</button>
-      </div>
-      <div class="visual">
-        <img src="assets/playerimg.png" alt="" />
       </div>
     </div>
-    <section class="feature-cards" id="features">
-      <div class="feature-heading">
-        <span>FEATURES</span>
+  </footer>
 
-        <h2>
-          Everything you need for a
-          <em>better listening experience.</em>
-        </h2>
-
-        <p>
-          Discover a smarter way to listen, explore, and connect with music that
-          fits your mood.
-        </p>
-      </div>
-
-      <div class="cards-section">
-        <div class="card">
-          <div class="card-icon">🎵</div>
-
-          <h3>Personalised Playlists</h3>
-
-          <p>
-            Discover playlists tailored to your unique listening style and
-            preferences.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">🧠</div>
-
-          <h3>Mood Based Listening</h3>
-
-          <p>
-            Find music that matches how you feel and creates the right
-            atmosphere.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">🎯</div>
-
-          <h3>Focus & Relax</h3>
-
-          <p>
-            Curated sounds to help you focus, relax, study, or simply unwind.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">✨</div>
-
-          <h3>Discover New Music</h3>
-
-          <p>Explore new songs and artists that you might fall in love with.</p>
-        </div>
-      </div>
-    </section>
-    <section class="benefits" id="benefits">
-      <div class="benefit-content">
-        <h2>Why Audio Theraphy?</h2>
-
-        <h1>Music isn't just something you hear. It's something you feel.</h1>
-
-        <p>
-          Audio Theraphy helps you find the right music for every moment,
-          whether you want to relax, focus, or simply enjoy your favorite songs.
-        </p>
-
-        <div class="benefit-list">
-          <div class="benefit-item">
-            <h3>01. Find Your Mood</h3>
-            <p>Discover music that matches how you feel.</p>
-          </div>
-
-          <div class="benefit-item">
-            <h3>02. Focus Better</h3>
-            <p>Listen to music that helps you concentrate.</p>
-          </div>
-
-          <div class="benefit-item">
-            <h3>03. Relax & Unwind</h3>
-            <p>Enjoy calming music when you need a break.</p>
-          </div>
-
-          <div class="benefit-item">
-            <h3>04. Discover New Music</h3>
-            <p>Find new songs and artists you may love.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="benefit-visual">
-        <img src="assets/player2.png" alt="Listening to music" />
-      </div>
-    </section>
-    <section class="final-cta" id="start">
-      <div class="cta-content">
-        <span>START YOUR JOURNEY</span>
-
-        <h2>
-          Your mood has a soundtrack.
-          <em>Find it.</em>
-        </h2>
-
-        <p>Discover music that fits your mood, your moment, and your story.</p>
-
-        <button>Start Listening →</button>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-content">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/nav logo.jpeg" alt="Audio Theraphy logo" />
-            <span>audio.theraphy._</span>
-          </div>
-
-          <p>
-            Music that understands your mood. Find your sound, feel your moment.
-          </p>
-        </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-
-          <a href="index.html">Home</a>
-          <a href="#features">Features</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#reviews">Reviews</a>
-        </div>
-        <div class="footer-links">
-          <h3>Connect</h3>
-
-          <a
-            href="https://www.instagram.com/audio.theraphy._/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-instagram"></i>
-            Instagram
-          </a>
-
-          <a
-            href="https://github.com/satvikreddy82"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github"></i>
-            GitHub
-          </a>
-
-          <a href="mailto:satvikreddy82@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            Email
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Audio Theraphy. All rights reserved.</p>
-
-        <p>Made with ♡ and music.</p>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>
